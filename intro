@@ -1,0 +1,37 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+	 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+			<title>Eyes for Pies :: Home</title>
+	</head>
+	
+	<body>
+			<h1><a href="intro.html">Eyes for Pies</a></h1>
+				<h2>Welcome</h2>
+					<div id="nav">
+						<ul class="topmenu">
+							<li id="current"><a href="intro.html">Eyes for Pies</a></li>
+							<li><a href="apple.html">Apple Pies</a></li>
+							<li><a href="pumpkin.html">Pumpkin Pies</a></li>
+							<li><a href="cherry.html">Cherry Pies</a></li>
+							<li><a href="scoop.html">Inside Scoop</a></li>
+						</ul>
+					</div>
+	
+	
+				<p> This site is all about Pies! We only have listed a few; however, click on <em> Inside Scoop </em> and give us the inside scoop on what is on your favorites list!
+				
+				</p>
+	
+	
+	
+	
+	
+					<address>
+						Angela R. TeSlaa | Eyes for Pies; Home | 760-977-1474 |<a href="mailto:kangegirl@yahoo.com">kangegirl@yahoo.com</a>| Copyright &copy;2016 | All rights reserved
+					</address>
+	</body>
+</html>
