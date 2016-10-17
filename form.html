@@ -6,25 +6,56 @@
 			<meta charset="utf-8">
 			<title>Eyes for Pies :: Inside Scoop</title>
 				<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
+			<link rel='stylesheet' href='style.css' />
+			<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
 	</head>
 	
 	<body>
 			<header itemscope itemtype="http://schema.org/LocalBusiness" id="main-header">
-				<h1>Give Us the Inside Scoop</h1>
-					<figure>
-						<img src="images/pies.jpg"/>
-						<figcaption>
-							Let's get our pie on&#33;
-						</figcaption>
-					</figure>
-					
+					<div id="logo1">
+							<img src="images/pies.jpg" alt="logo" class="logo1" title="logo" width="135" height="152">
+							<img src="images/scareypies.jpg" alt="logo" class="logo2" title="logo" width="135" height="152">
+					</div>
+					<h1>Give Us the Inside Scoop</h1>
 					
 					<nav>
-						<h1>Navigation</h1><ul class="topmenu">
+						<h2 hidden>Navigation</h2>
+						<ul class="topmenu">
 								<li><a href="intro.html">Eyes for Pies</a></li>
-								<li><a href="apple.html">Apple Pies</a></li>
-								<li><a href="pumpkin.html">Pumpkin Pies</a></li>
-								<li><a href="cherry.html">Cherry Pies</a></li>
+								<li><a href="apple.html">Apple Pies</a>
+									<ul>
+										<li><a href="#"> Sub Link 1</a></li>
+										<li><a href="#" aria-haspopup="true"> Sub Link 2</a>
+											<ul>
+												<li><a href="#"> Sub Link 3</a></li>
+												<li><a href="#"> Sub Link 4</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="pumpkin.html">Pumpkin Pies</a>
+									<ul>
+										<li><a href="#"> Sub Link 1</a></li>
+										<li><a href="#" aria-haspopup="true"> Sub Link 2</a>
+											<ul>
+												<li><a href="#"> Sub Link 3</a></li>
+												<li><a href="#"> Sub Link 4</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="cherry.html">Cherry Pies</a>
+									<ul>
+										<li><a href="#"> Sub Link 1</a></li>
+										<li><a href="#" aria-haspopup="true"> Sub Link 2</a>
+											<ul>
+												<li><a href="#"> Sub Link 3</a></li>
+												<li><a href="#"> Sub Link 4</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
 								<li><a href="scoop.html">Inside Scoop</a></li>
 								<li id="current"><a href="form.html">Questionaire</a></li>
 						</ul>
@@ -35,7 +66,7 @@
 		<form enctype="application/x-www-form-urlencoded" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post" id="Questionaire">
 			<fieldset>
 				<legend>Eyes for Pies</legend>
-				<fieldset>
+				<fieldset class="data">
 					<legend>Pleased To Meet You&#33;</legend>
 						<!-- Single line text box -->
 					<dl>
@@ -53,7 +84,7 @@
 						<dt>What is the color of your pies&#33;</dt>
 						<dd><input type="color" name="color"></dd>
 						<dt>Add your recipe from a URL here</dt>
-						<dd><input type="url" name="recipepage" placeholder="Where are you taking me&#33;"></dd>
+						<dd><input type="url" name="recipepage" placeholder="Where are you taking me&#63;"></dd>
 					</dl>
 				</fieldset>
 				
@@ -61,7 +92,7 @@
 					<legend>Your baking skills must be superior&#33;</legend>
 					<dl>
 						<dt>
-							<label for="baketime">How long have you been baking Pies&#33;</label>
+							<label for="baketime">How long have you been baking Pies&#63;</label>
 						</dt>
 						<dd>
 							<select name="length of baketime" id="baketime">
@@ -82,7 +113,7 @@
 							<!-- checkbox -->
 							<label>Which of the following is your LEAST favorite Pie filling&#63;</label>
 						</dt>
-						<dd>
+						<dd class="checkbox">
 							<ul>
 								<li><input type="checkbox" name="Least Favorite Pie Filling" id="rhubarb" value="rhubarb"/> <label for="rhubarb">Rhubard</label></li>
 								<li><input type="checkbox" name="Least Favorite Pie Filling" id="beets" value="beets"/> <label for="beets">Beets</label></li>
@@ -107,7 +138,7 @@
 							<label>Which Pie Crust do you use&#63;</label>
 						</dt>
 							<!-- Radio buttons -->
-						<dd>
+						<dd class="radio">
 							<ul>
 								<li><input type="radio" name="Favorite Crust" id="own" value="own"/> <label for="own">My own crust</label></li>
 								<li><input type="radio" name="Favorite Crust" id="pillsbury" value="pillsbury"/> <label for="pillsbury">Pillsbury</label></li>
@@ -188,7 +219,7 @@
 			<p><a href="#top" title="back to the top">Back to Top</a></p>
 		
 		
-					<footer>
+					<footer class="aboutUs">
 						<address>Sister Pies: Angie TeSlaa and Kendra Curry| Eyes for Pies: Cherry Pies | 760-977-1474 |<a href="mailto:kangegirl@yahoo.com">kangegirl@yahoo.com</a>|</address><small>Copyright &copy;2016 | All rights reserved</small>
 					</footer>
 			

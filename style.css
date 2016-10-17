@@ -1,0 +1,408 @@
+
+@font-face {
+		font-family: "Indie Flower" cursive;
+		src: url("project03/IndieFlower.ttf")
+}
+@font-face {
+		font-family: "ShadowsIntoLightTwo" Regular;
+		src: url("project03/ShadowsIntoLightTwo-Regular.ttf")
+}
+html {
+		padding-top:25px;
+		background-color: rgba(178,102,101,.8);
+
+}
+
+body{
+		width:80%;
+		padding:20px;
+		margin: 0 auto;
+		box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+		background-image: -webkit-linear-gradient(270deg,rgba(1,96,83,1.00) 0%,rgba(252,226,152,1.00) 100%);
+		background-image: -moz-linear-gradient(270deg,rgba(1,96,83,1.00) 0%,rgba(252,226,152,1.00) 100%);
+		background-image: -o-linear-gradient(270deg,rgba(1,96,83,1.00) 0%,rgba(252,226,152,1.00) 100%);
+		background-image: linear-gradient(180deg,rgba(1,96,83,1.00) 0%,rgba(252,226,152,1.00) 100%);
+		background-color: #614126;
+		background-attachment: fixed;
+		border-radius: 25px 25px 25px 25px;
+	
+}
+
+
+
+nav { 
+		background-color: rgba(0,0,0,.6); 
+		position: relative; 
+		padding: 10px 0px 0px 10px; 
+		font-family: 'Indie Flower';
+		font-size: 29px;
+		letter-spacing: -2px;
+}
+nav ul { list-style: none; margin: 0; padding: 0; }
+
+
+
+nav ul::after { content:''; display: block; clear: both; }
+nav ul li:hover { background-color: rgba(0,102,102,.8); }
+nav ul li:hover > ul { display: block; }
+
+nav ul li a { display: inline-block; color: #FF8666; padding: 10px 20px; text-decoration: none; width: 125px; }
+nav ul li a:hover { background-color: #339999; }
+
+
+nav ul ul { display: none; position: absolute; top: 100%; background-color: rgba(0,102,102,.8); }
+nav ul ul li { position: relative;}
+nav ul ul ul { left:100%; top:0; }
+
+/* top level */
+nav > ul { padding-left: 35px; }
+nav > ul > li { float: left; }
+nav > ul > li > a { padding: 10px 20px 15px 20px; width: auto; }
+
+@media screen and (max-width: 750px) {
+		header a.logo { width: 120px; height: 44px; }
+		article { width: 100%; float: none; margin-bottom: 40px; }
+		article div { margin: 0px 40px; padding: 0px 0px 30px 0px; border-right: none; border-bottom: 1px solid #555; }
+		aside { width: 100%; float: none; }
+		
+		nav { padding: 70px 0px 0px 10px;}
+		nav > ul { padding-left: 0px; padding-right: 20px;}
+		nav > ul > li > a { padding: 8px 12px 10px 12px; }
+}
+
+.logo1 {
+		float: right;
+		box-shadow: 10px 10px;
+		border-radius: 25px 25px 25px 25px;
+		-webkit-transition: all 2s ease;
+		-moz-transition: all 2s ease;
+		-o-transition: all 2s ease;
+		transition: all 2s ease;
+		
+}
+.logo1:hover{
+		-webkit-transform: rotateY(360deg);
+		-moz-transform: rotateY(360deg);
+		-o-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+}
+.logo2 {
+		float:left;
+		box-shadow: -10px -10px;
+		border-radius: 25px 25px 25px 25px;
+		-webkit-transition: all 2s ease;
+		-moz-transition: all 2s ease;
+		-o-transition: all 2s ease;
+		transition: all 2s ease;
+		
+}
+.logo2:hover{
+		-webkit-transform: rotateY(360deg);
+		-moz-transform: rotateY(360deg);
+		-o-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+}
+
+
+h1 {
+		text-align: center;
+		/*color: rgb(255,193,124);
+		text-shadow: 4px 3px 6px rgba(0,0,0,.5);*/
+		color: orange;
+		text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px orange;
+		font-size: 69px;
+		font-family: 'Indie Flower';
+		padding-bottom: 24px;
+}
+
+h2 { 
+		font-family: 'Indie Flower';
+		font-size: 43px;
+		text-shadow: 2px 2px brown;
+		
+}
+h3 a {
+		font-size: 0.8em;
+		color: rgb(116,78,147);
+}
+video 	{ max-width: 100%;}
+
+.summary{
+		float:right;
+}
+.mainStory {
+		
+		font-size: 25px;
+		background-color: rgba(176,196,157,.4);
+		margin: 10px;
+		color: rgb(63, 64, 84);
+		border: .2em ridge rgb(255,255,0);
+		border-radius: 25px 25px 25px 25px;
+		text-align: center;
+		padding: 0 20px;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+
+.legalStuff {
+		
+		font-size: 18px;
+		background-color: rgba(176,196,157,.4);
+		margin: 10px;
+		color: rgb(63, 64, 84);
+		border: .2em ridge rgb(255,255,0);
+		text-align: center;
+		border-radius: 25px 25px 25px 25px;
+		padding: 0 20px;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.stepOne:first-line, .stepTwo:first-line, .stepThree:first-line, .stepFour:first-line, .stepFive:first-line, .stepSix:first-line {
+		text-transform: uppercase;
+}
+
+.stepOne, .stepTwo, .stepThree, .stepFour, .stepFive, .stepSix {
+
+		list-style: decimal;
+}
+.mainPage {
+		color: #67a;
+		font-size: 1.5em;
+		font-weight: bold;
+		margin: 2em 0 1em 0;
+		color: rgb(178,102,101);
+		border: .2em ridge rgb(178,102,101);
+		padding: 0 20px;
+		border-radius: 25px 25px 25px 25px;
+		
+}
+
+
+li[itemprop="ingredients"] {
+		list-style-type: square;
+	
+}
+
+.outsideLinks {
+		display: inline;
+		
+}
+
+.recipeConverter{
+		font-size: 1em;
+		margin: 2em 0 1em 0;
+		color: rgb(205,195,50);
+		border: rgb(255,255,0);
+		padding: 0 20px;
+		border-radius: 25px 25px;
+		text-align: center;
+		box-shadow: -10px -10px;
+}
+.aboutUs {
+		font-size: 14px;
+		font-weight: bold;
+		margin: 1em 0 2em 0;
+		color: rgb(79,98,83);
+		text-align: center;
+		padding: 30px 0pc;
+		border-radius: 25px 25px 25px 25px;
+		-webkit-transition: font-size .5s ease;
+		-moz-transition: font-size .5s ease;
+		-o-transition: font-size .5s ease;
+		transition: font-size .5s ease;
+}
+.aboutUs:hover {
+		font-size: 30px;
+}
+.ingredients {
+		
+		font-size: 14px;
+		font-weight: bold;
+		margin: 2em 2em 2em 2em;
+		color: rgb(79,98,83);
+		border: .2em ridge rgb(255,129,0);
+		text-align: left;
+		float:right;
+		padding: 5px 10px;
+}
+.directions {
+		background-color: rgb(176,196,157);
+		font-size: 14px;
+		margin: 2em 2em 2em 2em;
+		color: rgb(79,98,83);
+		padding: 40px 30px 40px 15px;
+}
+.us {
+		font-family: 'Shadows Into Light Two';
+		font-size: 25px;
+		background-color: rgb(176,196,157);
+		margin: .5em 2em 2em 2em;
+		padding: 5px 10px 10px 10px;
+		color: rgb(79,98,83);
+		border-radius: 25px 25px 25px 25px;
+}
+fieldset {
+		border: 0.2em ridge rgb(255,129,0);
+		margin: 0 0 10px 0;
+}
+
+textarea {
+		background-color: rgb(178,102,101);
+}
+.resource li {
+		list-style: none;
+}
+.resource {
+		margin: .5em 2em 2em 2em;
+		padding: 5px 10px 10px 10px;
+		background-color:rgba(178,102,101,.8);
+		-webkit-transition: background-color .75s ease;
+		-moz-transition: background-color .75s ease;
+		-o-transition: background-color .75s ease;
+		transition: background-color .75s ease;
+}
+
+.resource a:hover {
+	background-color: rgba(250, 219, 43,.9);
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="tel"], input[type="color"], input[type="url"], textarea, select {
+		border: none;
+		background-color: rgb(249,228,130);
+		width:318px;
+		padding: .5em;
+		font-size: 1em;
+		-webkit-transition: background-color .75s ease;
+		-moz-transition: background-color .75s ease;
+		-o-transition: background-color .75s ease;
+		transition: background-color .75s ease;
+}
+
+textarea {
+	height:128px;
+}
+
+input:focus, textarea:focus {
+		border:2px solid rgb(168,88,163);
+		background-color: rgba(168,88,163,1);
+		color: #fff;
+}
+
+.applepic, .pumpkinpic, .cherrypic {
+		margin: 20px;
+		width: 200px;
+		height:200px;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease;
+}
+
+.applepic:hover, .pumpkinpic:hover, .cherrypic:hover {
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		transform: scale(1.5);
+		-webkit-box-shadow: 3px 3px 5px #000;
+		-moz-box-shadow: 3px 3px 5px #000;
+		box-shadow: 3px 3px 5px #000;
+}
+
+input[type="submit"], input[type="reset"] {
+		margin: 5px;
+		width: 175px;
+		height:50px;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease;
+	
+}
+
+input[type="submit"]:hover, input[type="image"]:hover, input[type="reset"]:hover {
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		transform: scale(1.5);
+		-webkit-box-shadow: 3px 3px 5px #000;
+		-moz-box-shadow: 3px 3px 5px #000;
+		box-shadow: 3px 3px 5px #000;
+}
+
+.pieinfo {
+		font-family: 'Shadows Into Light Two';
+		font-size: 25px;
+		background-color: rgba(176,196,157,.4);
+		margin: .5em 2em 2em 2em;
+		padding: 5px 10px 10px 10px;
+		color: rgb(79,98,83);
+		border-radius: 25px 25px 25px 25px;
+}
+.checkbox li {
+		list-style: none;
+}
+.radio li {
+		list-style: none;
+}
+/*.data {
+		webkit-transition: background-color .75s ease;
+		-moz-transition: background-color .75s ease;
+		-o-transition: background-color .75s ease;
+		transition: background-color .75s ease;
+		
+}*/
+/*   ul[itemprop="recipeInstructions"]  {
+		color: yellow;
+		font-size: 14px;
+		font-weight: bold;
+		margin: 10em 0 5em 0;
+		color: rgb(51,255,204);
+		border: .5em ridge rgb(255,255,0);
+		text-align: center;
+}
+*/
+
+
+
+/*-------
+close all tags
+utilize semantic HTML when possible, when you need to use a more general <div>, use semantically appropriate ids and classes
+avoid <br /> pretty much everywhere except the <address> tag
+don't use embedded CSS
+keep javascript in separate document(s)
+validate
+-------*/
+
+/*-------
+Layout: Apply a simple layout to your site. Don't worry too much about making it responsive; you will have two weeks to completely transform your layout into a responsive layout later in the semester. For this assignment I don't want you to spend too much time with positioning elements but rather to concentrate on visual cohesion and an integrated application of the following advanced CSS techniques.
+-------*/
+
+/*-------
+Web Fonts: Add two web fonts to your site. For one, use the @font-face method as described in Lynda videos (both CSS: Core Concepts and CSS: Advanced Typography Techniques contain a description and instructions for using @fontface). For the other, use a font from Google Web Fonts (Links to an external site.). For design purposes, I do not recommend using more than two very different fonts in your design because it can lose cohesiveness if too many different fonts are vying for attention, however that decision is up to you.
+-------*/
+
+/*-------
+Rounded Corners, Drop Shadows, Transparency, and Gradients: Add
+rounded corners,
+drop shadows,
+transparency,
+and gradients to your site design.
+Drop shadows should be applied to both a text element and a containing element.
+-------*/
+
+/*-------
+Overall Design: The above should be visible on every page. Each technique needs to be integrated into the overall design.
+-------*/
+
+/*-------
+Transitions and Transformations:
+Style one element with a transition,
+one element with a transform,
+and one element with both.
+-------*/
+
+/*-------
+Modernizr: Add the Modernizr library to your student folder and use it to provide a backup style for at least two of the above so that your site design degrades nicely in browsers that do not support those styles. CSS: Advanced Typography Techniques contains instructions on downloading and configuring Modernizr.
+-------*/

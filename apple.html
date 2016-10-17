@@ -6,25 +6,56 @@
 			<meta charset="utf-8">
 			<title>Eyes for Pies :: Apple Pies</title>
 				<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
+			<link rel='stylesheet' href='style.css' />
+			<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
 	</head>
 	
 	<body itemscope itemtype="http://schema.org/Recipe">
 			<header>
-				<h1>Eyes for Apple Pies</h1>
-					<figure>
-						<img src="images/pies.jpg"/>
-						<figcaption>
-							Let's get our pie on!
-						</figcaption>
-					</figure>
-					
-					
+					<div id="logo1">
+							<img src="images/pies.jpg" alt="logo" class="logo1" title="logo" width="135" height="152">
+							<img src="images/scareypies.jpg" alt="logo" class="logo2" title="logo" width="135" height="152">
+					</div>
+					<h1>Eyes for Apple Pies</h1>
+						
 					<nav>
-						<h1>Navigation</h1><ul class="topmenu">
+						<h2 hidden>Navigation</h2>
+						<ul class="topmenu">
 									<li><a href="intro.html">Eyes for Pies</a></li>
-									<li id="current"><a href="apple.html">Apple Pies</a></li>
-									<li><a href="pumpkin.html">Pumpkin Pies</a></li>
-									<li><a href="cherry.html">Cherry Pies</a></li>
+									<li id="current"><a href="apple.html">Apple Pies</a>
+										<ul>
+											<li><a href="#"> Sub Link 1</a></li>
+											<li><a href="#" aria-haspopup="true"> Sub Link 2</a>
+												<ul>
+													<li><a href="#"> Sub Link 3</a></li>
+													<li><a href="#"> Sub Link 4</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="pumpkin.html">Pumpkin Pies</a>
+										<ul>
+											<li><a href="#"> Sub Link 1</a></li>
+											<li><a href="#" aria-haspopup="true"> Sub Link 2</a>
+												<ul>
+													<li><a href="#"> Sub Link 3</a></li>
+													<li><a href="#"> Sub Link 4</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="cherry.html">Cherry Pies</a>
+										<ul>
+											<li><a href="#"> Sub Link 1</a></li>
+											<li><a href="#" aria-haspopup="true"> Sub Link 2</a>
+												<ul>
+													<li><a href="#"> Sub Link 3</a></li>
+													<li><a href="#"> Sub Link 4</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
 									<li><a href="scoop.html">Inside Scoop</a></li>
 									<li><a href="form.html">Questionaire</a></li>
 						</ul>
@@ -32,24 +63,32 @@
 			</header>
 			
 		<main id="applePies" role="main" class="recipe">
-			<h1>Apple Pies</h1>
+			<section class="mainPage">
+			<h2>Apple Pies</h2>
 				<figure>
-					<img src="images/apple.jpg"/>
+					<img src="images/apple.jpg" class="applepic"/>
 					<figcaption>
 						Nothing like Grandma's Apple Pie
 					</figcaption>
 				</figure>
 				
-					<section>
+				<h3>Need music to bake to? Click below</h3>
+							
+							<audio class="audio" controls preload="metadata">
+								<source src="images/pievideo.mp4" type="audio/mp4" />
+								<source src="images/pievideo.ogv" type="audio/ogg" />
+									<p> Your browser does not support audio.</p>
+							</audio>
+					
 						<header>
 							<h2>Kinds of Apples</h2>
-							<p> Let's learn about apples </p>
+							<p> Below are outside links to interesting sites about the different kinds of Apples. Let's learn a little about Apples! </p>
 						</header>	
-							<section>
-								<h3><a href="diffapp.html">Granny Smith Apples</a></h3>
-								<h3><a href="diffapp.html">Fuji Apples</a></h3>
-								<h3><a href="diffapp.html">Red Delicious</a></h3>
-								<h3><a href="diffapp.html">Scarlett</a></h3>
+							<section class="outsideLinks">
+								<h3><a href="https://en.wikipedia.org/wiki/Granny_Smith">Granny Smith Apples</a></h3>
+								<h3><a href="https://www.orangepippin.com/apples/fuji">Fuji Apples</a></h3>
+								<h3><a href="https://www.stemilt.com/fruits/apples/red-delicious-apples/">Red Delicious</a></h3>
+								<h3><a href="https://en.wikipedia.org/wiki/Gala_(apple)">Scarlett</a></h3>
 							</section>
 		
 		
@@ -60,6 +99,7 @@
 						</header>
 					 
 							<article role="article">
+							<aside class="pieinfo">
 								<h3> Our Recipes</h3>
 									<h4 itemprop="name"> Scrumptious Apple Pie</h4>
 									<time datetime="2016-01-01" class="pubdate" itemprop="dateCreated"> Posted on January 1<sup>st</sup>, 2016 </time>
@@ -73,8 +113,9 @@
 									<h4 itemprop="servingSize">Serving size: 8 </h4>
 									<h4 itemprop="calories">Calories per serving: 480 </h4>
 								</section>
-								<section>
-									<h4 class="ingredients">Ingredients:</h4>
+							</aside>
+								<section class="ingredients">
+									<h4>Ingredients:</h4>
 										<p>Ingredients for the Pastry</p>
 										<ul>
 											<li itemprop="ingredients">2 cups All-purpose flour</li>
@@ -89,43 +130,65 @@
 											<li itemprop="ingredients">1/2 tsp ground cinnamon</li>
 											<li itemprop="ingredients">1/2 tsp ground nutmeg</li>
 											<li itemprop="ingredients">1/8 tsp salt</li>
-											<li itemprop="ingredients">8 cups thinly sliced peeled tart apples about 8 medium</li>
+											<li itemprop="ingredients">8 cups thinly sliced/peeled tart apples about 8 med.</li>
 											<li itemprop="ingredients">2 Tbls butter or margarine</li>
 										</ul>
 								</section>
-								<section>
-									<h4 class="directions">Directions:</h4>
-										<ol itemprop="recipeInstructions">
-											<li>1. In medium bowl, mix 2 cups flour and 1 teaspoon salt. Cut in shortening, using pastry blender (or pulling 2 table knives through ingredients in opposite directions), until particles are size of small peas. Sprinkle with cold water, 1 tablespoon at a time, tossing with fork until all flour is moistened and pastry almost cleans side of bowl, 1 to 2 teaspoons more water can be added if necessary.</li>
+								<section class="directions">
+									<h4>Directions:</h4>
+										<ul itemprop="recipeInstructions">
+										
+											<li class="stepOne">In medium bowl, mix 2 cups flour and 1 teaspoon salt. Cut in shortening, using pastry blender (or pulling 2 table knives through ingredients in opposite directions), until particles are size of small peas. Sprinkle with cold water, 1 tablespoon at a time, tossing with fork until all flour is moistened and pastry almost cleans side of bowl, 1 to 2 teaspoons more water can be added if necessary.</li>
 											
-											<li>2. Gather pastry into a ball. Divide in half; shape into 2 flattened rounds on lightly floured surface. Wrap in plastic wrap; refrigerate about 45 minutes or until dough is firm and cold, yet pliable. This allows the shortening to become slightly firm, which helps make the baked pastry more flaky. If refrigerated longer, let pastry soften slightly before rolling.</li>
+											<li class="stepTwo">Gather pastry into a ball. Divide in half; shape into 2 flattened rounds on lightly floured surface. Wrap in plastic wrap; refrigerate about 45 minutes or until dough is firm and cold, yet pliable. This allows the shortening to become slightly firm, which helps make the baked pastry more flaky. If refrigerated longer, let pastry soften slightly before rolling.</li>
 											
-											<li>3. Heat oven to 425°F. With floured rolling pin, roll one pastry round into round 2 inches larger than upside-down 9-inch glass pie plate. Fold pastry into fourths; place in pie plate. Unfold and ease into plate, pressing firmly against bottom and side.</li>
+											<li class="stepThree">Heat oven to 425°F. With floured rolling pin, roll one pastry round into round 2 inches larger than upside-down 9-inch glass pie plate. Fold pastry into fourths; place in pie plate. Unfold and ease into plate, pressing firmly against bottom and side.</li>
 											
-											<li>4. In large bowl, mix sugar, 1/4 cup flour, the cinnamon, nutmeg and 1/8 teaspoon salt. Stir in apples until well mixed. Spoon into pastry-lined pie plate. Cut butter into small pieces; sprinkle over filling. Trim overhanging edge of pastry 1/2 inch from rim of plate.</li>
+											<li class="stepFour">In large bowl, mix sugar, 1/4 cup flour, the cinnamon, nutmeg and 1/8 teaspoon salt. Stir in apples until well mixed. Spoon into pastry-lined pie plate. Cut butter into small pieces; sprinkle over filling. Trim overhanging edge of pastry 1/2 inch from rim of plate.</li>
 											
-											<li>5. Roll other round of pastry into 10-inch round. Fold into fourths and cut slits so steam can escape. Unfold top pastry over filling; trim overhanging edge 1 inch from rim of plate. Fold and roll top edge under lower edge, pressing on rim to seal; flute as desired. Cover edge with 2- to 3-inch strip of foil to prevent excessive browning.</li>
+											<li class="stepFive">Roll other round of pastry into 10-inch round. Fold into fourths and cut slits so steam can escape. Unfold top pastry over filling; trim overhanging edge 1 inch from rim of plate. Fold and roll top edge under lower edge, pressing on rim to seal; flute as desired. Cover edge with 2- to 3-inch strip of foil to prevent excessive browning.</li>
 											
-											<li>6. Bake 40 to 50 minutes or until crust is brown and juice begins to bubble through slits in crust, removing foil for last 15 minutes of baking. Serve warm if desired.</li>
-										</ol>
+											<li class="stepSix">Bake 40 to 50 minutes or until crust is brown and juice begins to bubble through slits in crust, removing foil for last 15 minutes of baking. Serve warm if desired.</li>
+										</ul>
 								</section>
 									
 									
 									
 									
 									
-								<h3> Your Recipes (forum)</h3>
+								<form enctype="application/x-www-form-urlencoded" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post" id="AppleForum">
+									<fieldset>
+										<legend> Your Apple Recipes </legend>
+											<!-- Multi-line text box -->
+										<dl>
+											<dt>
+												<label for="comments">Did you know Apples are used for more than just bobbing for them&#33;&#63;</label>
+											</dt>
+											<dd>
+												<textarea cols="30" rows="8" name="message" id="comments" placeholder="Tell us about your favorite Apple Pie recipe and/or tricks you've aquired."></textarea>
+											</dd>
+											<dt>
+												<!-- Button type submit, image, reset -->
+											</dt>
+											<dd>
+												<input type="submit" value="Share your Apple Pie recipe here"/>
+												<input type="reset" value="Start Over"/>
+												
+											</dd>
+										</dl>
+									</fieldset>
+								</form>
 							</article>
-					</section>
+			</section>
 		</main>
 				
 				
 				
 							
 							
+					<p><a href="#top" title="back to the top">Back to Top</a></p>
 							
-							
-					<footer>
+					<footer class="aboutUs">
 						<address>Sister Pies: Angie TeSlaa and Kendra Curry| Eyes for Pies: Apple Pies | 760-977-1474 |<a href="mailto:kangegirl@yahoo.com">kangegirl@yahoo.com</a>|</address><small>Copyright &copy;2016 | All rights reserved</small>
 					</footer>
 	</body>
