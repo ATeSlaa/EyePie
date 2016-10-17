@@ -6,25 +6,56 @@
 			<meta charset="utf-8">
 			<title>Eyes for Pies :: Cherry Pies</title>
 				<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
+			<link rel='stylesheet' href='style.css' />
+			<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
 	</head>
 	
 	<body itemscope itemtype="http://schema.org/Recipe">
 			<header>
-				<h1>Eyes for Cherry Pies</h1>
-					<figure>
-						<img src="images/pies.jpg"/>
-						<figcaption>
-							Let's get our pie on!
-						</figcaption>
-					</figure>
-					
+					<div id="logo1">
+							<img src="images/pies.jpg" alt="logo" class="logo1" title="logo" width="135" height="152">
+							<img src="images/scareypies.jpg" alt="logo" class="logo2" title="logo" width="135" height="152">
+					</div>
+					<h1>Eyes for Cherry Pies</h1>
 					
 					<nav>
-						<h1>Navigation</h1><ul class="topmenu">
+						<h2 hidden>Navigation</h2>
+						<ul class="topmenu">
 								<li><a href="intro.html">Eyes for Pies</a></li>
-								<li><a href="apple.html">Apple Pies</a></li>
-								<li><a href="pumpkin.html">Pumpkin Pies</a></li>
-								<li id="current"><a href="cherry.html">Cherry Pies</a></li>
+								<li><a href="apple.html">Apple Pies</a>
+									<ul>
+										<li><a href="#"> Sub Link 1</a></li>
+										<li><a href="#" aria-haspopup="true"> Sub Link 2</a>
+											<ul>
+												<li><a href="#"> Sub Link 3</a></li>
+												<li><a href="#"> Sub Link 4</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="pumpkin.html">Pumpkin Pies</a>
+									<ul>
+										<li><a href="#"> Sub Link 1</a></li>
+										<li><a href="#" aria-haspopup="true"> Sub Link 2</a>
+											<ul>
+												<li><a href="#"> Sub Link 3</a></li>
+												<li><a href="#"> Sub Link 4</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li id="current"><a href="cherry.html">Cherry Pies</a>
+									<ul>
+										<li><a href="#"> Sub Link 1</a></li>
+										<li><a href="#" aria-haspopup="true"> Sub Link 2</a>
+											<ul>
+												<li><a href="#"> Sub Link 3</a></li>
+												<li><a href="#"> Sub Link 4</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
 								<li><a href="scoop.html">Inside Scoop</a></li>
 								<li><a href="form.html">Questionaire</a></li>
 						</ul>
@@ -32,22 +63,23 @@
 			</header>
 			
 			<main id="cherryPies" role="main" class="recipe">
-				<h1>Cherry Pies</h1>
+				<section class="mainPage">
+				<h2>Cherry Pies</h2>
 					<figure>
-						<img src="images/cherpie.jpg"/>
+						<img src="images/cherpie.jpg" class="cherrypic"/>
 						<figcaption>
 							Where is that icecream?
 						</figcaption>
 					</figure>
 				
-					<section>
+					
 						<header>
 							<h2> Kinds of Cherries</h2>
-							<p> Let's learn about cherries</p>
+							<p> Below are outside links to interesting sites about the different kinds of Cherries. Let's learn a little about Cherries!</p>
 						</header>
 							<section>
-								<h3><a href="diffcher.html">Tart/Sour Cherries</a></h3>
-								<h3><a href="diffcher.html">Sweet</a></h3>
+								<h3><a href="http://www.lifeextension.com/magazine/2013/6/anti-inflammatory-properties-of-tart-cherry/page-01">Tart/Sour Cherries</a></h3>
+								<h3><a href="http://www.superfreshgrowers.com/blog/2014/6/dark-sweet-cherries-what-you-need-know">Sweet</a></h3>
 							</section>
 							
 							
@@ -57,6 +89,7 @@
 						</header>
 						
 							<article role="article">
+							<aside class="pieinfo">
 								<h3> Our Recipes</h3>
 									<h4 itemprop="name"> Scrumptious Apple Pie</h4>
 									<time datetime="2016-02-02" class="pubdate" itemprop="dateCreated"> Posted on Feburary 2<sup>nd</sup>, 2016 </time>
@@ -70,8 +103,9 @@
 									<h4 itemprop="servingSize">Serving size: 8 </h4>
 									<h4 itemprop="calories">Calories per serving: 160 </h4>
 								</section>
-								<section>
-									<h4 class="ingredients">Ingredients:</h4>
+							</aside>
+								<section class="ingredients">
+									<h4>Ingredients:</h4>
 										<p> Ingredients for the Filling</p>
 										<ul>
 											<li itemprop="ingredients">4 cups cherries, pitted</li>
@@ -81,30 +115,52 @@
 											<li itemprop="ingredients">1 9in pastry for a douple-crust</li>
 										</ul>
 								</section>
-								<section>
-									<h4 class="directions">Directions:</h4>
-										<ol itemprop="recipeInstructions">
-											<li>1. Mix ingredients for filling.</li>
+								<section class="directions">
+									<h4>Directions:</h4>
+										<ul itemprop="recipeInstructions">
+											<li class="stepOne">Mix ingredients for filling.</li>
 											
-											<li>2. Place in pastry-lined pie pan</li>
+											<li class="stepTwo">Place in pastry-lined pie pan</li>
 											
-											<li>3. Put top crust on. Cut vent slits in top crust, and flute edges.</li>
+											<li class="stepThree">Put top crust on. Cut vent slits in top crust, and flute edges.</li>
 											
-											<li>4. Brush with milk and sprinkle with sugar.</li>
+											<li class="stepFour">Brush with milk and sprinkle with sugar.</li>
 											
-											<li>5. Bake at 425 F for 25 minutes, reduce heat to 350F and bake for 25-30 minutes more.</li>
+											<li class="stepFive">Bake at 425 F for 25 minutes, reduce heat to 350F and bake for 25-30 minutes more.</li>
 											
-											<li>Tip: put sugar, flour and cinnamon in a large zip-loc bag. Add the cherries and toss to coat. This coats them more even than doing it in a bowl and the filling is firmer.</li>
-										</ol>
+											<li class="stepSix">Tip: put sugar, flour and cinnamon in a large zip-loc bag. Add the cherries and toss to coat. This coats them more even than doing it in a bowl and the filling is firmer.</li>
+										</ul>
 								</section>
-								<h3> Your Recipes (forum)</h3>
+								<form enctype="application/x-www-form-urlencoded" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post" id="CherryForum">
+									<fieldset>
+										<legend> Your Cherry Recipes </legend>
+											<!-- Multi-line text box -->
+										<dl>
+											<dt>
+												<label for="comments">Did you know Cherries are used for more than just throwing at each other&#33;&#63;</label>
+											</dt>
+											<dd>
+												<textarea cols="30" rows="8" name="message" id="comments" placeholder="Tell us about your favorite Cherry Pie recipe and/or tricks you've aquired."></textarea>
+											</dd>
+											<dt>
+												<!-- Button type submit, image, reset -->
+											</dt>
+											<dd>
+												<input type="submit" value="Share your Cherry Pie recipe here"/>
+												<input type="reset" value="Start Over"/>
+												
+											</dd>
+										</dl>
+									</fieldset>
+								</form>
 							</article>
-					</section>
+				</section>
 			</main>
 					
 					
-					
-					<footer>
+				<p><a href="#top" title="back to the top">Back to Top</a></p>
+				
+					<footer class="aboutUs">
 						<address>Sister Pies: Angie TeSlaa and Kendra Curry| Eyes for Pies: Cherry Pies | 760-977-1474 |<a href="mailto:kangegirl@yahoo.com">kangegirl@yahoo.com</a>|</address><small>Copyright &copy;2016 | All rights reserved</small>
 					</footer>
 	</body>
