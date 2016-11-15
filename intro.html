@@ -60,6 +60,8 @@
 									<li><a href="form.html">Questionaire</a></li>
 						</ul>
 					</nav>
+						
+					
 			</header>
 	
 				
@@ -92,7 +94,34 @@
 				
 				
 				
-				
+				<div id="pieChart" style="height: 150px; width: 100%;"></div> 
+			<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+			<script type="text/javascript">
+
+				window.onload = function () {
+					var chart = new CanvasJS.Chart("pieChart", {
+						theme: "theme2",//theme1
+						title:{
+							text: "People's Favorite Pies"              
+						},
+						animationEnabled: true,   // change to true
+						data: [              
+						{
+							// Change type to "bar", "area", "spline", "pie",etc.
+							type: "pie",
+							dataPoints: [
+								{ label: "mixed berry",  y: 10  },
+								{ label: "cherry", y: 15  },
+								{ label: "pumpkin", y: 25  },
+								{ label: "apple",  y: 30  },
+								{ label: "lemon meringue",  y: 28  }
+							]
+						}
+						]
+					});
+					chart.render();
+				}
+			</script>
 				
 				
 				
