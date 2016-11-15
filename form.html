@@ -4,6 +4,7 @@
 <html lang="en">
 	<head>
 			<meta charset="utf-8">
+		
 			<title>Eyes for Pies :: Inside Scoop</title>
 				<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
 			<link rel='stylesheet' href='style.css' />
@@ -11,7 +12,9 @@
 			<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
 	</head>
 	
-	<body>
+	<body onload="draw();">
+	
+	
 			<header itemscope itemtype="http://schema.org/LocalBusiness" id="main-header">
 					<div id="logo1">
 							<img src="images/pies.jpg" alt="logo" class="logo1" title="logo" width="135" height="152">
@@ -61,8 +64,52 @@
 						</ul>
 					</nav>
 			</header>
+			
+			 <canvas id="transformation" width="200" height="150"></canvas>
+		
+		<script type="text/javascript">
+		  function draw() {
+			  var ctx = document.getElementById('transformation').getContext('2d');
+
+			  var sin = Math.sin(Math.PI/6);
+			  var cos = Math.cos(Math.PI/6);
+			  ctx.translate(100, 100);
+			  var c = 0;
+			  for (var i=0; i <= 12; i++) {
+				c = Math.floor(255 / 12 * i);
+				var my_gradient=ctx.createLinearGradient(0,0,170,0);
+				my_gradient.addColorStop(0,"black");
+				my_gradient.addColorStop(0.5,"red");
+				my_gradient.addColorStop(1,"white");
+				ctx.fillStyle =my_gradient;
+				ctx.fillRect(0, 0, 100, 10);
+				ctx.transform(cos, sin, -sin, cos, 0, 0);
+			  }
+			  
+			  
+			}
+			draw();
+		  
+		  
+		</script>
 		
 		
+		<canvas id="myPattern" width="950" height="150"></canvas>
+    <script>
+      var canvas = document.getElementById('myPattern');
+      var context = canvas.getContext('2d');
+
+      var imageObj = new Image();
+      imageObj.onload = function() {
+        var pattern = context.createPattern(imageObj, 'repeat');
+
+        context.rect(0, 0, canvas.width, canvas.height);
+        context.fillStyle = pattern;
+        context.fill();
+      };
+      imageObj.src = "images/scareypies.jpg";
+    </script>
+	
 		<form enctype="application/x-www-form-urlencoded" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post" id="Questionaire">
 			<fieldset>
 				<legend>Eyes for Pies</legend>
